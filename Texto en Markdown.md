@@ -1,23 +1,21 @@
 # Preparing the environment, cleaning the data for Stacks
 
-###1. First, we will create a set of directories to place data in. At each step of the analysis, we will transform the data moving it from the `raw/` to `samples/` to `stacks/`.
+
+### 1. First, we will create a set of directories to place data in. At each step of the analysis, we will transform the data moving it from the `raw/` to `samples/` to `stacks/`.
 
 ```
 
 ~/tutorial% mkdir raw samples stacks
-
 ~/tutorial% ls
-
  raw/ samples/ stacks/
 
 ```
 
-###2. We will assume that you have placed the raw sequencing data into the `raw/` directory. If you are using the raw files output by the BUSTARD part of the pipeline your data will look like this 
+### 2. We will assume that you have placed the raw sequencing data into the `raw/` directory. If you are using the raw files output by the BUSTARD part of the pipeline your data will look like this 
 
 ```
 
 ~/tutorial/raw% ls 
-
 s_1_1_0001_qseq.txt  s_1_1_0025_qseq.txt  s_1_1_0049_qseq.txt  s_1_1_0073_qseq.txt  s_1_1_0097_qseq.txt
 s_1_1_0002_qseq.txt  s_1_1_0026_qseq.txt  s_1_1_0050_qseq.txt  s_1_1_0074_qseq.txt  s_1_1_0098_qseq.txt
 s_1_1_0003_qseq.txt  s_1_1_0027_qseq.txt  s_1_1_0051_qseq.txt  s_1_1_0075_qseq.txt  s_1_1_0099_qseq.txt
@@ -54,7 +52,7 @@ s_1_sequence.txt
 
 ```
 
-###3. The next step is to create a file containing our five barcodes. Using a convenient editor, place the barcodes alone in a file, one per line.
+### 3. The next step is to create a file containing our five barcodes. Using a convenient editor, place the barcodes alone in a file, one per line.
 
 ```
 ~/tutorial% vi barcodes
